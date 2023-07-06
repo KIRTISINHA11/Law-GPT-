@@ -10,6 +10,7 @@ from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
+os.environ["OPENAI_API_KEY"] = "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"
  
 # Sidebar contents
 with st.sidebar:
