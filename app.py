@@ -24,12 +24,12 @@ with st.sidebar:
  
     ''')
     add_vertical_space(5)
-    st.write('Made with ❤️ by [Prompt Engineer](https://youtube.com/@engineerprompt)')
+    st.write('Made by [Kirti Sinha](https://github.com/KIRTISINHA11)')
  
 load_dotenv()
  
 def main():
-    st.header("Chat with PDF 💬")
+    st.header("Now You Can Chat with PDF 💬")
  
  
     # upload a PDF file
