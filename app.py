@@ -10,7 +10,7 @@ from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "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"
  
 # Sidebar contents
 with st.sidebar:
@@ -60,7 +60,7 @@ def main():
                 VectorStore = pickle.load(f)
             # st.write('Embeddings Loaded from the Disk')s
         else:
-            embeddings = OpenAIEmbeddings(openai_api_key="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")
+            embeddings = OpenAIEmbeddings(openai_api_key="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")
             VectorStore = FAISS.from_texts(chunks, embedding=embeddings)
             with open(f"{store_name}.pkl", "wb") as f:
                 pickle.dump(VectorStore, f)
